@@ -12,7 +12,7 @@ function App() {
 
   const generateReport = () => {
     setLoading(true);
-    fetch("http://localhost:5001/api/forecast")
+    fetch("https://biologics-potency-predictor-3.onrender.com/api/forecast")
       .then((res) => res.json())
       .then((data) => {
         const labels = data.map((d) =>
